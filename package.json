@@ -4,7 +4,9 @@
   "description": "This is an app to support the poor and the needy people around the world",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "server": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -23,8 +25,19 @@
   },
   "homepage": "https://github.com/tweneboah/hicotek-foundation#readme",
   "dependencies": {
+    "cloudinary": "^1.17.0",
+    "config": "^3.2.4",
+    "connect-flash": "^0.1.1",
     "dotenv": "^8.2.0",
+    "ejs": "^2.7.1",
     "express": "^4.17.1",
-    "mongoose": "^5.7.9"
+    "express-session": "^1.17.0",
+    "method-override": "^3.0.0",
+    "moment": "^2.24.0",
+    "mongoose": "^5.7.9",
+    "multer": "^1.4.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1"
   }
 }
