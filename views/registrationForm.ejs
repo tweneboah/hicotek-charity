@@ -1,0 +1,41 @@
+<%- include('./includes/header.ejs') %>
+<!-- <link rel="stylesheet" href="/css/product.css"> -->
+</head>
+
+<body>
+
+    <main>
+        <h1>Register Form</h1>
+        <form action="/register" method="POST">
+            <div>
+                <input placeholder="username" name="username" />
+            </div>
+
+            <div>
+                <input placeholder="Firstname" name="firstname" />
+            </div>
+
+
+            <div>
+                <input placeholder="lastname" name="lastname" />
+            </div>
+
+            <div>
+                <input placeholder="Email" name="email" />
+            </div>
+
+
+            <div>
+                <input placeholder="country" name="country" />
+            </div>
+
+
+            <div>
+                <input placeholder="Password" name="password" />
+            </div>
+
+            <button type="submit">Register</button>
+
+        </form>
+    </main>
+    <%- include('./includes/footer.ejs') %>

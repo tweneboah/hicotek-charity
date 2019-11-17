@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/tweneboah/hicotek-foundation#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "cloudinary": "^1.17.0",
     "config": "^3.2.4",
     "connect-flash": "^0.1.1",
