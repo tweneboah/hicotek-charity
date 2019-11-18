@@ -7,26 +7,41 @@
     <main>
         <h1>Register Form</h1>
         <form action="/register" method="POST">
+
+
+
+            <% if (errorMessage) { %>
+            <div class="user-message user-message--error"><%= errorMessage %></div>
+            <% } %>
+
+
+            </h2>
             <div>
-                <input placeholder="username" name="username" />
+                <h1>
+
+                </h1>
+
+                <input placeholder="username" name="username" value="<%=oldInput.username%>" />
             </div>
 
             <div>
-                <input placeholder="Firstname" name="firstname" />
+
+
+                <input placeholder="Firstname" name="firstname" value="<%=oldInput.firstname%>" />
             </div>
 
 
             <div>
-                <input placeholder="lastname" name="lastname" />
+                <input placeholder="lastname" name="lastname" value="<%=oldInput.lastname%>" />
             </div>
 
             <div>
-                <input placeholder="Email" name="email" />
+                <input placeholder="Email" name="email" value="<%=oldInput.email%>" />
             </div>
 
 
             <div>
-                <input placeholder="country" name="country" />
+                <input placeholder="country" name="country" value="<%=oldInput.country%>" />
             </div>
 
 

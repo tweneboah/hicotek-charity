@@ -37,6 +37,7 @@ mongoose.connect(MONGO_URI, {
     console.log(`DB has connected successfully`)
 })
 
+
 //CONFIGURING VIEW ENGINE
 app.set('view engine', 'ejs');
 app.set('views', 'views');
