@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const MongDBStore = require('connect-mongodb-session')(session);
 //CUSTOM IMPORT
 const userRouter = require('./routes/usersRoute');
+const victimRouter = require('./routes/victimsRoute')
 const app = express();
 
 //=======
@@ -52,8 +53,8 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //MOUNTING ROUTES
-app.use('/', userRouter)
-
+app.use('/', userRouter);
+app.use('/', victimRouter);
 
 //SERVER
 
