@@ -8,8 +8,8 @@ const isLoggedIn = require('../middleware/isLoggedIn');
 router.get('/', userController.home)
 router.post('/register', [
     check('username', 'Username cannot be empty').not().isEmpty(),
-    check('firstname', 'Firtname cannot be empty').not().isEmpty(),
-    check('lastname', 'Lastname cannot be empty').not().isEmpty(),
+    check('firstname', 'First name cannot be empty').not().isEmpty(),
+    check('lastname', 'Last name cannot be empty').not().isEmpty(),
     check('country', 'Country cannot be empty').not().isEmpty(),
     check('email', 'Enter a valid Email').isEmail(),
     check('password', 'Password cannot be empty').not().isEmpty(),
